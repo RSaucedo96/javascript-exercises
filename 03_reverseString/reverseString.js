@@ -2,10 +2,10 @@ const reverseString = function(sentence) {
     if (/\s/g.test(sentence) == true){
         var words = sentence.split(' ').reverse();
         var wordsCount;
-        var wordholder;
+        var wordHolder;
         for(wordsCount = 0; wordsCount < words.length; wordsCount++) {
-            wordholder=words[wordsCount].split('').reverse();
-            words[wordsCount]=wordholder.join('')
+            wordHolder=words[wordsCount].split('').reverse();
+            words[wordsCount]=wordHolder.join('')
         }
         return words.join(' ');
     }
